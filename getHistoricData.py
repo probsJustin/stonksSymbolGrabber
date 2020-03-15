@@ -13,7 +13,7 @@ logging.basicConfig(filename='./historicStockData',level=logging.DEBUG)
 
 
 def workerFunction(stockSymbol):
-    url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=" + stockSymbol + "&apikey=R837E6L5JQ89UFWZ"
+    url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=" + stockSymbol + "&apikey=--"
     response = requests.request("GET", url)
     return response.text
 
